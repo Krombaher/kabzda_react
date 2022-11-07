@@ -1,0 +1,42 @@
+
+.selectBlock {
+    margin-top: 50px;
+}
+
+.select {
+    position: relative;
+    width: 150px;
+    height: 30px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.arrow {
+    position: absolute;
+    top: 5px;
+    right: 0;
+    transition: 0.3s;
+}
+
+.rotate {
+    rotate: 180deg;
+    transition: 0.3s;
+}
+
+.optionItem {
+    width: 150px;
+    height: 30px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 3px 0;
+}
+
+.optionItem:hover {
+    background: #67c6f1;
+}
+
+.selected {
+    background: #67c6f1;
+}

@@ -1,26 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from 'react';
+import {Select} from "./Select/Select";
+import s from './App.module.css'
+
+export type ValueType = {
+    id:number
+    value:number
+}
+
+const optionValue = [
+    {id: 1, value: 1},
+    {id: 2, value: 2},
+    {id: 3, value: 3},
+    {id: 4, value: 4},
+    {id: 5, value: 5},
+    {id: 6, value: 6}
+]
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className={s.app}>
+            <Select optionValue={optionValue}/>
+        </div>
+    )
 }
 
 export default App;
